@@ -1,0 +1,68 @@
+@keyframes whitetoblack {
+    0% {
+        background-color: whitesmoke;
+        color: black;
+    }
+    100% {
+        background-color: rgb(15, 15, 15);
+        color: whitesmoke;
+    }
+}
+
+@keyframes slideout {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-200%);
+        visibility: hidden;
+    }
+    51% {
+        visibility: hidden;
+    }
+    52% {
+        transform: translateY(200%);
+        visibility: hidden;
+    }
+    53% {
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+#dark-toggle{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    cursor: pointer;
+
+    width: 4vw;
+    background-color: rgb(44, 44, 44);
+    aspect-ratio: 1/1;
+    border-radius: 9999px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s ease-in-out;
+
+    overflow-y: hidden;
+
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+#dark-toggle:hover{
+    transform: scale(1.1);
+}
+
+#dark-toggle img{
+    transition: 0.5s ease-in-out;
+}
+
+#dark-toggle:hover img {
+    transform: rotate(360deg);
+}
