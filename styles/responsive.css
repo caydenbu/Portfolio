@@ -4,6 +4,12 @@
         overflow-y: hidden;
     }
 
+    #dark-toggle{
+        width: 13vw;
+        top: 3vw;
+        right: 3vw;
+    }
+
     h1 {
         font-size: 18vw;
     }
@@ -24,6 +30,8 @@
         margin-left: 10%;
         margin-top: 1vw;
     }
+
+
 
     @keyframes UnderlineAnimationResponsive {
         0% {
