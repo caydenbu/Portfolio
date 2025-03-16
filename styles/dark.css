@@ -9,6 +9,17 @@
     }
 }
 
+@keyframes blacktoGray {
+    0% {
+        background-color: rgb(15, 15, 15);
+        color: black;
+    }
+    100% {
+        background-color: rgb(26, 26, 26);
+        color: whitesmoke;
+    }
+}
+
 @keyframes slideout {
     0% {
         transform: translateY(0%);

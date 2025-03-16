@@ -23,6 +23,17 @@ main{
 
 h1{
     user-select: none;
+    gap: 0;
+}
+
+h1 span {
+    display: inline-block; /* Ensures each span behaves independently */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+    transform: translateY(20%); /* Moves the hovered span upward */
+}
+
+h1 span:hover {
+    transform: translateY(10%); /* Moves the hovered span upward */
 }
 
 .underline-container{
@@ -145,5 +156,26 @@ nav{
     }
 }
 
+.projects-title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
+    font-size: 3vw;
+    padding-left: 2%;
+    padding-bottom: 1%;
 
+    user-select: none;
+}
+@keyframes blinking {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.projects-title span {
+    animation: blinking 1.5s steps(1, start) infinite;
+}

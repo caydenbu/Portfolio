@@ -42,11 +42,16 @@ async function wave(){
 wave();
 
 // Dark Mode Animation
+
+// Hero
 const main = document.querySelector('main');
 const underline = document.getElementById('underline');
 const toggle = document.getElementById('dark-toggle');
 const moon = document.getElementById('moon');
 const githublogo = document.getElementById('github');
+
+// Odds
+const odds = document.getElementById('odds');
 
 let darkmodeToggled = false;
 
@@ -64,23 +69,31 @@ async function toggleDarkMode() {
     // Apply animations
     if(!darkmodeToggled){
         
+        // Hero
         toggle.style.backgroundColor = "white";
-
         main.style.animation = "whitetoblack 0.5s forwards";
         underline.style.animation = "whitetoblack 0.5s forwards reverse";
         moon.style.animation = "slideout 1s forwards";
-
         githublogo.src = "./photos/github-light.svg";
+
+        // Odds
+        odds.style.animation = "blacktoGray 1s forwards ";
+
+        // Sun
         await sleep(500);
         moon.src = "./photos/sun.png";
     }else{
-        toggle.style.backgroundColor = "black";
 
+        // Hero
+        toggle.style.backgroundColor = "black";
         main.style.animation = "whitetoblack 0.5s forwards reverse";
         underline.style.animation = "whitetoblack 0.5s forwards";
         moon.style.animation = "slideout 1s forwards reverse";
-
         githublogo.src = "./photos/github.png";
+
+        odds.style.animation = "blacktoGray 1s forwards";
+
+        // Moon
         await sleep(500);
         moon.src = "./photos/moon.png";
         
