@@ -1,6 +1,22 @@
-#odds{
+#odds {
     width: 100vw;
     height: 80vh;
 
     background-color: rgb(15, 15, 15);
+}
+
+#odds-title {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+#odds-desc {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding-left: 2%;
+    width: 75%;
 }
