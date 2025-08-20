@@ -1,7 +1,5 @@
 #odds {
     width: 100vw;
-    height: 80vh;
-
     background-color: rgb(15, 15, 15);
 }
 
@@ -19,4 +17,71 @@
     color: white;
     padding-left: 2%;
     width: 75%;
+}
+
+#odds-container {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 30vh;
+
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+#odds-card {
+    height: 30vh;
+    aspect-ratio: 2.5/3.5;
+    background-color: white;
+    cursor: pointer;
+}
+
+#odds-arrow {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    padding-left: 2%;
+}
+
+.card {
+    aspect-ratio: 1/1.6;
+    background-color: white;
+    border-radius: 0.4vw;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.rankTop {
+    position: relative;
+    padding-top: 3%;
+    padding-left: 5%;
+    width: 100%;
+    height: 20%;
+    text-align: left;
+    font-size: 2vw;
+    font-family: Dueces;
+}
+
+.rankBottom {
+    position: relative;
+    padding-left: 5%;
+    width: 100%;
+    height: 20%;
+    text-align: left;
+    font-size: 2vw;
+    transform: scale(-1);
+    font-family: Dueces;
+}
+
+.suit {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    font-size: 6vw;
+    font-family: Dueces;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
