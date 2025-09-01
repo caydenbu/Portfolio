@@ -5,15 +5,18 @@
 
 #odds-title {
     font-size: 64px;
-    font-weight: bold;
     color: white;
     padding-top: 2%;
     padding-left: 2%;
+    padding-bottom: 20px;
+}
+
+#odds-title span {
+    font-weight: bold;
 }
 
 #odds-desc {
     font-size: 24px;
-    font-weight: bold;
     color: white;
     padding-left: 2%;
     width: 75%;
@@ -44,6 +47,18 @@
     padding-left: 2%;
 }
 
+.odds-text {
+    font-size: 22px;
+    color: white;
+}
+
+#odds-github {
+    height: 50%;
+    aspect-ratio: 1/1;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
 .card {
     aspect-ratio: 1/1.6;
     background-color: white;
@@ -59,8 +74,9 @@
     width: 100%;
     height: 20%;
     text-align: left;
-    font-size: 2vw;
+    font-size: 2em;
     font-family: Dueces;
+    overflow-y: none;
 }
 
 .rankBottom {
@@ -69,7 +85,8 @@
     width: 100%;
     height: 20%;
     text-align: left;
-    font-size: 2vw;
+    font-size: 2em;
+    overflow-y: none;
     transform: scale(-1);
     font-family: Dueces;
 }

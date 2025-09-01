@@ -1,110 +1,81 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>caydenbu.</title>
-        <link rel="icon" href="./photos/favicon.png" type="image/x-icon" />
 
-        <link rel="stylesheet" href="./styles/style.css" />
-        <link rel="stylesheet" href="./styles/dark.css" />
-        <link rel="stylesheet" href="./styles/responsive.css" />
-        <link rel="stylesheet" href="./styles/odds.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>caydenbu.</title>
+    <link rel="icon" href="./photos/favicon.png" type="image/x-icon" />
 
-        <script src="./scripts/utility.js" defer></script>
-        <script src="./scripts/main.js" defer></script>
-        <script src="./scripts/odds.js" defer></script>
-    </head>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/odds.css" />
 
-    <body>
-        <div id="dark-toggle" onclick="toggleDarkMode()">
-            <img
-                src="./photos/moon.png"
-                alt="Dark/Light Mode"
-                width="50%"
-                id="moon"
-            />
+    <script src="./scripts/utility.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/odds.js" defer></script>
+</head>
+
+<body>
+    <div id="dark-toggle" onclick="toggleDarkMode()">
+        <img src="./photos/moon.png" alt="Dark/Light Mode" width="50%" id="moon" />
+    </div>
+    <main>
+        <h1>
+            <span class="name-char">c</span><span class="name-char">a</span><span class="name-char">y</span><span
+                class="name-char">d</span><span class="name-char">e</span><span class="name-char">n</span><span
+                class="name-char">b</span><span class="name-char">u</span><span class="name-char">.</span>
+        </h1>
+        <div class="underline-container">
+            <div id="underline"></div>
         </div>
-        <main>
-            <h1>
-                <span class="name-char">c</span><span class="name-char">a</span
-                ><span class="name-char">y</span><span class="name-char">d</span
-                ><span class="name-char">e</span><span class="name-char">n</span
-                ><span class="name-char">b</span><span class="name-char">u</span
-                ><span class="name-char">.</span>
-            </h1>
-            <div class="underline-container">
-                <div id="underline"></div>
+        <div id="description">Web, Rendering, and Game Design.</div>
+        <div class="nav-names">
+            <p>Experience</p>
+            <p>Contacts</p>
+        </div>
+        <nav>
+            <div class="nav-div languages">
+                <img src="./photos/walmart.png" alt="" srcset="" />
+                <img src="./photos/HTML5_Badge.svg.png" alt="" srcset="" />
+                <img src="./photos/css.svg" alt="" srcset="" />
+                <img src="./photos/js.png" alt="" srcset="" />
+                <img src="./photos/react.svg" alt="" srcset="" class="responsive-hidden" />
+                <img src="./photos/cpp.svg" alt="" srcset="" />
+                <img src="./photos/java.png" alt="" srcset="" class="responsive-hidden" />
+                <img src="./photos/python.svg" alt="" srcset="" class="responsive-hidden" />
             </div>
-            <div id="description">Web, Rendering, and Game Design.</div>
-            <div class="nav-names">
-                <p>Experience</p>
-                <p>Contacts</p>
+            <div class="nav-div links">
+                <a href="mailto:your-email@business@caydenbu.com" target="_blank"><img src="./photos/email.webp"
+                        alt="Email" srcset="" /></a>
+                <a href="https://www.linkedin.com/in/cayden-buchanan-a6495331a/" target="_blank"><img
+                        src="./photos/linkedln.png" alt="" srcset="" /></a>
+                <a href="https://github.com/caydenbu" target="_blank"><img src="./photos/github.png" alt="" srcset=""
+                        id="github" /></a>
             </div>
-            <nav>
-                <div class="nav-div languages">
-                    <img src="./photos/walmart.png" alt="" srcset="" />
-                    <img src="./photos/HTML5_Badge.svg.png" alt="" srcset="" />
-                    <img src="./photos/css.svg" alt="" srcset="" />
-                    <img src="./photos/js.png" alt="" srcset="" />
-                    <img
-                        src="./photos/react.svg"
-                        alt=""
-                        srcset=""
-                        class="responsive-hidden"
-                    />
-                    <img src="./photos/cpp.svg" alt="" srcset="" />
-                    <img
-                        src="./photos/java.png"
-                        alt=""
-                        srcset=""
-                        class="responsive-hidden"
-                    />
-                    <img
-                        src="./photos/python.svg"
-                        alt=""
-                        srcset=""
-                        class="responsive-hidden"
-                    />
-                </div>
-                <div class="nav-div links">
-                    <a
-                        href="mailto:your-email@business@caydenbu.com"
-                        target="_blank"
-                        ><img src="./photos/email.webp" alt="Email" srcset=""
-                    /></a>
-                    <a
-                        href="https://www.linkedin.com/in/cayden-buchanan-a6495331a/"
-                        target="_blank"
-                        ><img src="./photos/linkedln.png" alt="" srcset=""
-                    /></a>
-                    <a href="https://github.com/caydenbu" target="_blank"
-                        ><img
-                            src="./photos/github.png"
-                            alt=""
-                            srcset=""
-                            id="github"
-                    /></a>
-                </div>
-            </nav>
-            <p class="projects-title">Projects <span>&#128899;</span></p>
-        </main>
-        <section id="odds">
-            <p id="odds-title">Can You Beat The Odds?</p>
-            <p id="odds-desc">
-                BeatTheOdds is a rogue-like card game built in html, css, and
-                vanilla js. You can play on any browser any time. deeply
-                inspired from one of my favorite games Balatro, I am aiming to
-                create a very short but pleasent experience anyone can enjoy.
-            </p>
-            <div id="odds-container">
-                <p id="odds-arrow">try it here ----></p>
-                <div id="odds-card" class="card">
-                    <div class="rankTop">A</div>
-                    <div class="suit">♠</div>
-                    <div class="rankBottom">A</div>
-                </div>
+        </nav>
+        <p class="projects-title">Projects <span>▾</span></p>
+    </main>
+    <section id="odds">
+        <p id="odds-title">Can You <span>Beat The Odds</span>?</p>
+        <p id="odds-desc">
+            BeatTheOdds is a rogue-like card game built in html, css, and
+            vanilla js. You can play on any browser any time. deeply
+            inspired from one of my favorite games Balatro, I am aiming to
+            create a very short but pleasent experience anyone can enjoy.
+        </p>
+        <div id="odds-container">
+            <p id="odds-arrow">try it here ----></p>
+            <div id="odds-card" class="card">
+                <div class="rankTop">A</div>
+                <div class="suit">♠</div>
+                <div class="rankBottom">A</div>
             </div>
-        </section>
-    </body>
+            <p class="odds-text">or see it here --></p>
+            <a id="odds-github" href="https://github.com/caydenbu/BeatTheOdds" target="_blank"><img
+                    src="./photos/github-light.svg" alt="" srcset="" height="90%" /></a>
+    </section>
+</body>
+
 </html>
