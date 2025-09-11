@@ -1,13 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
 
+body {
+    background-color: black;
+}
 
-main{
+main {
     background-color: whitesmoke;
     width: 100vw;
     height: 100vh;
@@ -18,63 +21,67 @@ main{
     flex-direction: column;
 
     font-size: 5vw;
-
 }
 
-h1{
+h1 {
     user-select: none;
     gap: 0;
 }
 
 h1 span {
-    display: inline-block; /* Ensures each span behaves independently */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
-    transform: translateY(20%); /* Moves the hovered span upward */
+    display: inline-block;
+    /* Ensures each span behaves independently */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition for hover */
+    transform: translateY(20%);
+    /* Moves the hovered span upward */
 }
 
 h1 span:hover {
-    transform: translateY(10%); /* Moves the hovered span upward */
+    transform: translateY(10%);
+    /* Moves the hovered span upward */
 }
 
-.underline-container{
+.underline-container {
     width: 100%;
     height: 1.5%;
-    
+
     display: flex;
     justify-content: left;
     margin-left: 50%;
 }
 
-#underline{
+#underline {
     width: 50%;
     height: 100%;
     background-color: black;
     animation: UnderlineAnimation 2s forwards;
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-
 }
 
 @keyframes UnderlineAnimation {
     0% {
         width: 0%;
     }
+
     100% {
         width: 50%;
     }
 }
 
-#description{
+#description {
     width: 50%;
     font-size: 2vw;
     user-select: none;
     margin-bottom: 3%;
 }
 
-.nav-names{
+.nav-names {
     width: 70%;
     display: flex;
 }
-.nav-names p{
+
+.nav-names p {
     width: 50%;
     user-select: none;
     font-size: 1.5vw;
@@ -88,7 +95,7 @@ h1 span:hover {
     text-align: right;
 }
 
-nav{
+nav {
     width: 70%;
     height: 10%;
     background-color: rgba(0, 0, 0, 0);
@@ -96,7 +103,7 @@ nav{
     display: flex;
 }
 
-.nav-div{
+.nav-div {
     width: 50%;
     height: 100%;
 
@@ -106,21 +113,20 @@ nav{
     gap: 5%;
 }
 
-.nav-div img{
+.nav-div img {
     width: 5%;
 
     position: relative;
 }
 
-.languages{
+.languages {
     width: 70%;
 
     justify-content: left;
     background-color: rgba(255, 192, 203, 0);
-    
 }
 
-.links{
+.links {
     width: 30%;
     background-color: rgba(173, 216, 230, 0);
 
@@ -129,7 +135,7 @@ nav{
     justify-content: end;
 }
 
-.links a{
+.links a {
     width: 20%;
     height: 100%;
 
@@ -138,25 +144,28 @@ nav{
     justify-content: right;
 }
 
-.links a img{
+.links a img {
     width: 70%;
     transition: 0.3s;
 }
 
-.links a img:hover{
+.links a img:hover {
     transform: translateY(-10%);
 }
 
 @keyframes wave {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10%);
     }
 }
 
-.projects-title{
+.projects-title {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -167,10 +176,14 @@ nav{
 
     user-select: none;
 }
+
 @keyframes blinking {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }

@@ -19,12 +19,15 @@ function duplicateCard(card) {
     }
     const CLONE = card.cloneNode(true);
     CLONE.style.position = "absolute";
+    CLONE.style.cursor = "pointer";
     CLONE.classList.add("clone");
 
     // New link because clones cover up main link
     CLONE.onclick = () => {
         window.open("https://github.com/caydenbu/BeatTheOdds", "_blank");
     };
+
+    CLONE.onho;
 
     const RECT = card.getBoundingClientRect();
     const LEFT = RECT.left + window.scrollX; // page coords

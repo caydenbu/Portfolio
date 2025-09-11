@@ -1,10 +1,5 @@
 @media (max-aspect-ratio: 1/1) {
-
-    *{
-        overflow-y: hidden;
-    }
-
-    #dark-toggle{
+    #dark-toggle {
         width: 13vw;
         top: 3vw;
         right: 3vw;
@@ -14,35 +9,34 @@
         font-size: 18vw;
     }
 
-    #underline{
+    #underline {
         width: 80%;
         height: 50%;
         animation: UnderlineAnimationResponsive 2s forwards;
         animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
     }
 
-    .underline-container{
+    .underline-container {
         width: 100%;
         height: 1.5%;
-        
+
         display: flex;
         justify-content: left;
         margin-left: 10%;
         margin-top: 1vw;
     }
 
-
-
     @keyframes UnderlineAnimationResponsive {
         0% {
             width: 0%;
         }
+
         100% {
             width: 90%;
         }
     }
 
-    #description{
+    #description {
         font-size: 8vw;
         height: 20vw;
         width: 80%;
@@ -50,61 +44,55 @@
         margin-bottom: 15vw;
     }
 
-    .nav-names{
+    .nav-names {
         width: 80%;
     }
 
-    .nav-names p{
+    .nav-names p {
         width: 50%;
         user-select: none;
         font-size: 6vw;
-
     }
-
 
     .nav-names p:nth-child(1) {
         animation: none;
     }
 
-    .nav-div{
+    .nav-div {
         padding-top: 3vw;
         align-items: flex-start;
     }
 
-    nav{
+    nav {
         width: 90%;
-        
     }
 
-    .languages{
+    .languages {
         padding-left: 3vw;
         width: 60%;
     }
 
-
-    .nav-div img{
+    .nav-div img {
         width: 12%;
-    
+
         position: relative;
     }
 
-    .responsive-hidden{
+    .responsive-hidden {
         display: none;
     }
 
-    .links{
+    .links {
         width: 40%;
         padding-right: 3vw;
-    
+
         display: flex;
         align-items: flex-start;
         justify-content: end;
     }
 
-    .links a{
+    .links a {
         width: 50%;
         align-items: flex-start;
     }
-    
-
 }

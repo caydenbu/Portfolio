@@ -41,22 +41,10 @@
 }
 
 #odds-arrow {
-    font-size: 64px;
+    font-size: 6vw;
     font-weight: bold;
     color: white;
     padding-left: 2%;
-}
-
-.odds-text {
-    font-size: 22px;
-    color: white;
-}
-
-#odds-github {
-    height: 50%;
-    aspect-ratio: 1/1;
-    overflow-y: hidden;
-    cursor: pointer;
 }
 
 .card {
